@@ -47,6 +47,7 @@ body {
 
 .tab-content.active {
     display: block;
+    overflow: auto;
 }
 
 .form-group {
