@@ -27,16 +27,17 @@ body {
     flex: 1;
     padding: 16px;
     text-align: center;
-   /* background: #f7f7f7;*/
+    background: #f1f1f1;
     transition: background 0.3s;
 }
 
 .tab:hover {
-   background: #f1f1f1;
+   background: #fff39a;
 }
 
 .tab.active {
-    /*background: #fff;*/
+    background: #000000;
+    color: white;
     border: 2px solid black;
 }
 
