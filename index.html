@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" data-tab="history">Patient History</div>
+            <div class="tab" data-tab="diagnosis">Diagnosis</div>
+        </div>
+        <div id="history" class="tab-content active">
+            <div class="form-group">
+                <label for="history-input">Patient History</label>
+                <textarea id="history-input" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="summarize-button">Summarize</button>
+            </div>
+            <div id="summary-result" class="result"></div>
+        </div>
+        <div id="diagnosis" class="tab-content">
+            <div class="form-group">
+                <label for="symptoms-input">Symptoms</label>
+                <textarea id="symptoms-input" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="treatment-button">Suggest Treatment</button>
+            </div>
+            <div id="treatment-result" class="result"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
