@@ -46,6 +46,7 @@ body {
 }
 
 .tab-content.active {
+    padding: 16px;
     display: block;
     overflow: auto;
 }
@@ -88,4 +89,5 @@ body {
     background: #f7f7f7;
     border-radius: 4px;
     font-size: 16px;
+    line-height: 1.6;
 }
