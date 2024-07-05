@@ -42,8 +42,7 @@ body {
 .tab-content {
     padding: 16px;
     display: none;
-    height: auto; 
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow: auto;
 }
 
 .tab-content.active {
