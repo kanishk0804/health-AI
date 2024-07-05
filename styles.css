@@ -1,17 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url("image 1.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: auto;
-    margin: 0;
+    margin-top: 50px;
 }
 
 .container {
-    background: white;
+    border: 2px solid #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     overflow: auto; /* Enable scrolling */
     width: 80%;
     max-width: 900px;
@@ -26,17 +27,17 @@ body {
     flex: 1;
     padding: 16px;
     text-align: center;
-    background: #f7f7f7;
+   /* background: #f7f7f7;*/
     transition: background 0.3s;
 }
 
 .tab:hover {
-    background: #f1f1f1;
+   background: #f1f1f1;
 }
 
 .tab.active {
-    background: #fff;
-    border-bottom: 2px solid #ff7f50;
+    /*background: #fff;*/
+    border: 2px solid black;
 }
 
 .tab-content {
@@ -46,7 +47,6 @@ body {
 }
 
 .tab-content.active {
-    padding: 16px;
     display: block;
     overflow: auto;
 }
@@ -65,8 +65,9 @@ body {
     padding: 8px;
     box-sizing: border-box;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 3spx solid #ccc;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .form-group button {
@@ -86,7 +87,7 @@ body {
 .result {
     margin-top: 16px;
     padding: 16px;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     border-radius: 4px;
     font-size: 16px;
     line-height: 1.6;
