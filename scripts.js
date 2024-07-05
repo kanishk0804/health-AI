@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const publicUrl = "https://your-ngrok-url";
+    const publicUrl = "https://e4a0-35-201-174-116.ngrok-free.app";
 
     document.querySelectorAll('.tab').forEach(tab => {
         tab.addEventListener('click', function() {
