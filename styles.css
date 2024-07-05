@@ -42,7 +42,8 @@ body {
 .tab-content {
     padding: 16px;
     display: none;
-    overflow: auto;
+    height: 300px; /* Set a fixed height or adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .tab-content.active {
