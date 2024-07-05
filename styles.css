@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab {
+    flex: 1;
+    padding: 16px;
+    text-align: center;
+    background: #f7f7f7;
+    transition: background 0.3s;
+}
+
+.tab:hover {
+    background: #f1f1f1;
+}
+
+.tab.active {
+    background: #fff;
+    border-bottom: 2px solid #ff7f50;
+}
+
+.tab-content {
+    padding: 16px;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-group button:hover {
+    background: #ff5722;
+}
+
+.result {
+    margin-top: 16px;
+    padding: 16px;
+    background: #f7f7f7;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.6;
+}
