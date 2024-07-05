@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('summarize-button').addEventListener('click', function() {
         const summary = document.getElementById('history-input').value;
-        console.log('Summary:', summary);  // Logging summary input value
         fetch(publicUrl + '/summarize', {
             method: 'POST',
             headers: {
@@ -22,18 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Summarize API Response:', data);  // Logging API response data
             document.getElementById('summary-result').innerHTML = data.result.replace(/\n/g, '<br>');
         })
         .catch(error => {
-            console.error('Summarize API Error:', error);  // Logging fetch error
             alert('An error occurred: ' + error);
         });
     });
 
     document.getElementById('treatment-button').addEventListener('click', function() {
         const symptoms = document.getElementById('symptoms-input').value;
-        console.log('Symptoms:', symptoms);  // Logging symptoms input value
         fetch(publicUrl + '/suggest-treatment', {
             method: 'POST',
             headers: {
@@ -43,11 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Suggest Treatment API Response:', data);  // Logging API response data
             document.getElementById('treatment-result').innerHTML = data.result.replace(/\n/g, '<br>');
         })
         .catch(error => {
-            console.error('Suggest Treatment API Error:', error);  // Logging fetch error
             alert('An error occurred: ' + error);
         });
     });
